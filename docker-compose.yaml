@@ -1,7 +1,7 @@
 services:
     simple-apps:
         build: .
-        image: syahrulwahyudi5/simple-app-image
+        image: syahrulwahyudi5/simple-apps-image
         container_name: ct-simple-apps
         ports:
             -"3000:3000"
