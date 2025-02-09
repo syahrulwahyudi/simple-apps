@@ -53,7 +53,7 @@ pipeline {
       // Proses publish image
         stage('Publish Image') {
             steps {
-                echo 'Publish Image'
+                sh 'docker compose push'
             }
         }
     }
