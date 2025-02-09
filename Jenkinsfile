@@ -15,11 +15,11 @@ pipeline {
                 sh 'npm install'
             }
         }
-        
+
               // proses test apps
         stage('Testing Apps') {
             steps {
-                echo 'Testing Apps'
+                sh 'npm test'
             }
         }
 
