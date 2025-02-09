@@ -39,7 +39,7 @@ pipeline {
         // Proses Build Image
         stage('Build Image') {
             steps {
-                echo 'Build Image'
+                sh 'docker compose build'
             }
         }
 
