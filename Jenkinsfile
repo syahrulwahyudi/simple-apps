@@ -16,6 +16,13 @@ pipeline {
             }
         }
 
+       // proses copy environtment variable
+        stage('Copy env') {
+            steps {
+                sh 'cp -p /home/ubuntu/Hari-1/simple-apps/.env .'
+            }
+        }
+
               // proses test apps
         stage('Testing Apps') {
             steps {
