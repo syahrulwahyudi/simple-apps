@@ -1,5 +1,6 @@
-FROM node:18.20.6-alpine3.21
+FROM node:18.16.0
 WORKDIR /app
-ADD . /app/
+ADD . /app
 RUN npm install
-CMD npm start
+CMD ["npm", "start"]
+EXPOSE 3000
